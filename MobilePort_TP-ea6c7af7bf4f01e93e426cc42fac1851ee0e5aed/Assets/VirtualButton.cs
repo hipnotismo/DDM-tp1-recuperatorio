@@ -11,22 +11,27 @@ public class VirtualButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     bool pressed = false;
     bool release = false;
 
-    public void OnPointerDown(PointerEventData eventData) {
+    public void OnPointerDown(PointerEventData eventData)
+    {
         InputManager.Instance.SetButtonState(button + player, InputManager.ButtonStates.Down);
         pressed = true;
     }
-    public void OnPointerUp(PointerEventData eventData) {
+    public void OnPointerUp(PointerEventData eventData)
+    {
         InputManager.Instance.SetButtonState(button + player, InputManager.ButtonStates.Up);
         pressed = false;
         release = true;
     }
 
-    void LateUpdate() {
-        if (pressed) {
+    void LateUpdate()
+    {
+        if (pressed)
+        {
             InputManager.Instance.SetButtonState(button + player, InputManager.ButtonStates.Pressed);
             pressed = false;
         }
-        if (release) {
+        if (release)
+        {
             InputManager.Instance.SetButtonState(button + player, InputManager.ButtonStates.NoPressed);
             release = false;
         }

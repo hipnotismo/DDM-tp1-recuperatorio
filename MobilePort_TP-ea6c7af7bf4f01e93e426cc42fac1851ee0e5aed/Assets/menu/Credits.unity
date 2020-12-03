@@ -377,7 +377,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1096435907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54d7d625c289ab442b14a862e6ba21c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 72b3b20c0e212ef48a1ce77fc5d5a05b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1575121093
@@ -749,7 +749,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1096435912}
-        m_MethodName: Back
+        m_MethodName: BackTo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
