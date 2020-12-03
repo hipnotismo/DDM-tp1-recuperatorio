@@ -155,9 +155,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8423130209267777348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72422f9dd61db2842baf8d1286a97fbe, type: 3}
+  m_Script: {fileID: 11500000, guid: 04efbf643749612479b66a75001949e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stick: {fileID: 8423130208792754399}
   Background: {fileID: 8423130209267777345}
+  player: 
   limit: 250
