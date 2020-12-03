@@ -18,17 +18,17 @@ public class MainMenu : MonoBehaviour
 
     public void PlayButton() {
         if (player1.isOn) {
-            Debug.Log("Play with 1 player");
+            //Debug.Log("Play with 1 player");
             GameManager.SinglePlayer = true;
             UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion9");
         }
         else if (player2.isOn) {
-            Debug.Log("Play with 2 player");
+           // Debug.Log("Play with 2 player");
             GameManager.SinglePlayer = false;
             UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion9");
         }
         else {
-            Debug.Log("Plz select a game mode");
+          //  Debug.Log("Plz select a game mode");
         }
     }
 

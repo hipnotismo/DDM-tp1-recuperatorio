@@ -116572,7 +116572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlador: {fileID: 0}
-  miInput: 1
+  player: 2
   Desde: {fileID: 13040}
   Hasta: {fileID: 13041}
 --- !u!1 &451934488
@@ -116971,7 +116971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlador: {fileID: 0}
-  miInput: 0
+  player: 1
   Desde: {fileID: 13044}
   Hasta: {fileID: 13043}
 --- !u!1 &1049659492 stripped
@@ -117417,7 +117417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlador: {fileID: 0}
-  miInput: 0
+  player: 
   Desde: {fileID: 13062}
   Hasta: {fileID: 13063}
 --- !u!1 &1346981767 stripped
@@ -117566,7 +117566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlador: {fileID: 0}
-  miInput: 1
+  player: 
   Desde: {fileID: 13017}
   Hasta: {fileID: 13016}
 --- !u!1 &1581642630
