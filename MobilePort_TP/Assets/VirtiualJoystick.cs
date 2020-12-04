@@ -17,7 +17,7 @@ public class VirtiualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, 
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Background.color = Color.red;
+        Background.color = Color.blue;
         stick.anchoredPosition = ConverToLocal(eventData);
     }
 
