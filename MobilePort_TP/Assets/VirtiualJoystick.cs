@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+
 public class VirtiualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
 {
 
     [SerializeField] RectTransform stick = null;
     [SerializeField] Image Background = null;
+
 
     public string player = "";
     public float limit = 250f;
@@ -49,11 +51,18 @@ public class VirtiualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, 
 
     void SetHorizontal(float val)
     {
-        InputManager.Instance.SetAxis("Horizontal" + player, val);
+        string test = "Horizontal" + player;
+        Debug.Log(test);
+        InputManager.Instance.SetAxis(test, val);
+        Debug.Log(player);
     }
     void SetVertical(float val)
     {
-        InputManager.Instance.SetAxis("Vertical" + player, val);
+        string test = "Vertical" + player;
+        Debug.Log(test);
+        InputManager.Instance.SetAxis(test, val);
+        //Debug.Log();
+
     }
 
     Vector2 ConverToLocal(PointerEventData eventData)
