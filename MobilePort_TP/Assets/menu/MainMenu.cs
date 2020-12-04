@@ -8,27 +8,65 @@ public class MainMenu : MonoBehaviour
     [SerializeField] Button firstButton = null;
     [SerializeField] Toggle player1 = null;
     [SerializeField] Toggle player2 = null;
-  //  [SerializeField] GameObject help1Player = null;
-   // [SerializeField] GameObject help2Players = null;
+    [SerializeField] Toggle easy = null;
+    [SerializeField] Toggle medium = null;
+    [SerializeField] Toggle hard = null;
+
+  
 
     // Start is called before the first frame update
-    void Start() {
+    void Start()
+    {
         firstButton.Select();
     }
 
-    public void PlayButton() {
-        if (player1.isOn) {
-            //Debug.Log("Play with 1 player");
-            GameManager.SinglePlayer = true;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion9");
+    public void PlayButton()
+    {
+        if (player1.isOn)
+        {
+            if (easy.isOn)
+            {
+                Debug.Log("Play with 1 player on easy");
+                GameManager.SinglePlayer = true;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion9");
+            }
+            if (medium.isOn)
+            {
+                Debug.Log("Play with 1 player on medium");
+                GameManager.SinglePlayer = true;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion10");
+            }
+            if (hard.isOn)
+            {
+                Debug.Log("Play with 1 player on hard");
+                GameManager.SinglePlayer = true;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion11");
+            }
         }
-        else if (player2.isOn) {
-           // Debug.Log("Play with 2 player");
-            GameManager.SinglePlayer = false;
-            UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion9");
+        else if (player2.isOn)
+        {
+            if (easy.isOn)
+            {
+                Debug.Log("Play with 2 player on easy");
+                GameManager.SinglePlayer = false;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion9");
+            }
+            if (medium.isOn)
+            {
+                Debug.Log("Play with 2 player on medium");
+                GameManager.SinglePlayer = false;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion10");
+            }
+            if (hard.isOn)
+            {
+                Debug.Log("Play with 2 player on hard");
+                GameManager.SinglePlayer = false;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("conduccion11");
+            }
         }
-        else {
-          //  Debug.Log("Plz select a game mode");
+        else
+        {
+            Debug.Log("Plz select a game mode");
         }
     }
 
@@ -36,10 +74,6 @@ public class MainMenu : MonoBehaviour
          UnityEngine.SceneManagement.SceneManager.LoadScene("Credits");
     }
 
-   /* public void OnGameModeSelected(bool status) {
-        help1Player.SetActive(player1.isOn);
-        help2Players.SetActive(player2.isOn);
-    }*/
 
     public void OnExitButton() {
         Debug.Log("Exit");

@@ -52,14 +52,14 @@ public class VirtiualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, 
     void SetHorizontal(float val)
     {
         string test = "Horizontal" + player;
-        Debug.Log(test);
+       // Debug.Log(test);
         InputManager.Instance.SetAxis(test, val);
-        Debug.Log(player);
+      //  Debug.Log(player);
     }
     void SetVertical(float val)
     {
         string test = "Vertical" + player;
-        Debug.Log(test);
+      //  Debug.Log(test);
         InputManager.Instance.SetAxis(test, val);
         //Debug.Log();
 
